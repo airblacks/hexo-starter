@@ -1,99 +1,50 @@
-# Hexo Configuration
-## Docs: https://hexo.io/docs/configuration.html
-## Source: https://github.com/hexojs/hexo/
+# basic
+title: Daily
+subtitle: Minimalism, simplicity and refined details
+favicon: https://hexo.io/icon/favicon-96x96.png
 
-# Site
-title: 海风博客
-subtitle: 分享代码与创意
-description: 海风网，分享Web开发中的技术文章，分享生活中的灵感与创意，鼓励阅读，不读书则愚。
-author: Gallen Hu
-language: zh-CN
-timezone:
+# avatar: images/avatar.png
+# banner_small: images/banner-small.png
+# banner_large: images/banner-large.png
+logo: https://hexo.io/logo.svg
 
-# URL
-## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://hinpc.github.io/Daily
-root: /Daily/
-permalink: :year/:month/:title/
-permalink_defaults:
+# disqus
+#disqus_shortname: drakeleung
 
-# Directory
-source_dir: source
-public_dir: docs
-tag_dir: tags
-archive_dir: archives
-category_dir: categories
-code_dir: downloads/code
-i18n_dir: :lang
-skip_render:
-
-# Writing
-new_post_name: :title.md # File name of new posts
-default_layout: post
-titlecase: false # Transform title into titlecase
-external_link: true # Open external links in new tab
-filename_case: 0
-render_drafts: false
-post_asset_folder: false
-relative_link: false
-future: true
 highlight:
   enable: true
   line_number: false
   auto_detect: false
   tab_replace:
 
-# Home page setting
-# path: Root path for your blogs index page. (default = '')
-# per_page: Posts displayed per page. (0 = disable pagination)
-# order_by: Posts order. (Order by date descending by default)
-index_generator:
-  path: ''
-  per_page: 4
-  order_by: -date
-
-# Category & Tag
-default_category: uncategorized
-category_map:
-tag_map:
-
-# Date / Time format
-## Hexo uses Moment.js to parse and display date
-## You can customize the date format as defined in
-## http://momentjs.com/docs/#/displaying/format/
-date_format: YYYY-MM-DD
-time_format: HH:mm:ss
-
-# Pagination
-## Set per_page to 0 to disable pagination
-per_page: 4
-pagination_dir: page
-
-# Extensions
-## Plugins: https://hexo.io/plugins/
-## Themes: https://hexo.io/themes/
-theme: Daily
-
-# Deployment
-## Docs: https://hexo.io/docs/deployment.html
-deploy:
-  type:
-
-logo: https://static.hinpc.com/images/2018/logo.svg
-
+# nav #
 nav:
-  Home: .
-  Archive: archives
-  About: about
+  home: .
+  archive: archives
+  # about: about
+  # rss: atom.xml
 
+# hexo-renderer-sass
+node_sass:
+  outputStyle: nested
+  precision: 5
+  sourceComments: false
+
+# Default post title
+default_post_title: Untitled
+
+# social
 social:
   github: https://github.com/GallenHu
   # weibo: http://weibo.com/10010800
-  twitter: https://twitter.com/GallenHu
-  mail: mailto:gallenhu@foxmail.com
+  # mail: mailto:gallenhu@foxmail.com
+  # twitter: https://twitter.com/GallenHu
 
+# widget
+#   title: 标题
+#   content: 内容
 widget:
   title: 关于本站
-  content: <p align="left">分享Web开发中的技术文章，分享生活中的灵感与创意，鼓励阅读，不读书则愚。</p>
+  content: <ul><li><a href="https://github.com/GallenHu/hexo-theme-Daily/wiki">如何自定义这里的内容(配置教程)?</a></li></ul>
 
-disqus_shortname: hinpc
+footer: Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> with Theme <a href="https://github.com/GallenHu/hexo-theme-Daily" target="_blank">Daily</a>
