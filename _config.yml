@@ -5,19 +5,19 @@
 # Site
 title: LittleNote
 subtitle: ''
-description: ''
+description: 没有一朵云，没有一棵树，是不美丽的。
 keywords:
 author: air
 language: en
 timezone: ''
 
 # Header
-# menu:
-#  About: /about
+menu:
+  About: /about
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://air.black
 root: /
 permalink: :title/
 permalink_defaults:
